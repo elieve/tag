@@ -74,3 +74,36 @@ async def mentionall(event):
         spam_chats.remove(chat_id)
     except:
         pass
+
+
+@Zaid.on(events.NewMessage(pattern="^/cancel$"))
+async def cancel_spam(event):
+    is_admin = False
+    try:
+        partici_ = await Zaid(GetParticipantRequest(
+            event.chat_id,
+            event.sender_id
+        ))
+    except UserNotParticipantError:
+        is_admin = False
+    else:
+        if (
+                isinstance(
+                    partici_.participant,
+                    (
+                            ChannelParticipantAdmin,
+                            ChannelParticipantCreator
+                    )
+                )
+        ):
+            is_admin = True
+    if not is_admin:
+        return await event.reply("__Hanya admin yang dapat menjalankan perintah ini!__")
+    if not event.chat_id in spam_chats:
+        return await event.reply("__Tidak ada proses berjalan...__")
+    else:
+        try:
+            spam_chats.remove(event.chat_id)
+        except:
+            pass
+        return await event.respond("__Dihentikan...__")
