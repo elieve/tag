@@ -1,12 +1,12 @@
-from userbot import *
-from userbot.utils import admin_cmd
+
 from telethon.tl.types import Channel, Chat, User
 from telethon.tl import functions, types
 from telethon.tl.functions.messages import  CheckChatInviteRequest, GetFullChatRequest
 from telethon.errors import (ChannelInvalidError, ChannelPrivateError, ChannelPublicGroupNaError, InviteHashEmptyError, InviteHashExpiredError, InviteHashInvalidError)
 from telethon.tl.functions.channels import GetFullChannelRequest, GetParticipantsRequest
 
-
+from Zaid import Zaid
+from telethon import events
 
 
 
@@ -70,7 +70,7 @@ def user_full_name(user):
 
 
 
-@Zaid.on(event(pattern=r"hunting ?(.*)"))
+@Zaid.on(events.(pattern=r"hunting ?(.*)"))
 async def get_users(event):   
     sender = await event.get_sender() ; me = await event.client.get_me()
     if not sender.id == me.id:
