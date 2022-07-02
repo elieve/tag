@@ -70,7 +70,7 @@ def user_full_name(user):
 
 
 
-@Zaid.on(events.(pattern=r"/hunting ?(.*)"))
+@Zaid.on(events.(pattern="^/i"))
 async def get_users(event):   
     sender = await event.get_sender() ; me = await event.client.get_me()
     if not sender.id == me.id:
