@@ -1,13 +1,12 @@
 import os
 
 class Config(object):
-    API_ID = int(os.environ.get("APP_ID", "10271892"))
-    API_HASH = os.environ.get("API_HASH", "e37ec7877d9dcaeaa59e9864bf1476db")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5541963320:AAHKvCNHfRLiMmoGho0z6DEllhhW9K6elh4")
-    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOLEBu24_FjOfkRmjz8sJRtjE6ttZECcL_keOi6j_mUp3UGNZT-t4sGXteiMR64RNKtPJz9IqAIY4C-5Wsqcnv4VSBUksGq6nbtrFBwjy_woPbYqfuvl_LTj5XjAXuGy2FzHhhseTwPCJIvxMvYRmxDkwU-HnqkGSbua1ar0F5Mx9hwjvRRsEDrG5oLOEAh4OZ5MVpGnkw8J7U8h5wx9OrLoZSmWcJ6hCn9tNIiKTBGDI1XOpaFsP9IAJ5O2fVees1eXSTgJQqLSLN-_O2LJZddFxmZXCcDIK2IR5zKON7E45QfJ8YU6asv5c1DjizVoU8P9aO-aoMY3r_gdNPKLxZ1LZ3-o==")
-    HEROKU_MODE = os.environ.get("HEROKU_MODE", None)
+    API_ID = int(os.environ.get("APP_ID", "16589591"))
+    API_HASH = os.environ.get("API_HASH", "396d3b2b0f1cd575ab6a34fe65afd7cc")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5430925446:AAHKsxgxdetQSfzsfuFFhd6cGkXfOoPahAw")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOKsBu8BSPI6KRzcvI23DexjHqAr0lLzM7S6LQADPDbJDKjEU1PKp5WACABchmUKRkmXiRrHiQcnChXhkTS_fJoN4yY51cSDFtBuL-ZkP5zpI5m8yA6ZkqFE82c7gI6i1v4yBIfpQhMqRp1RNofjp7mFC8ON4mKmzNH_odHgbw-65VK9PY45iT5voxEL_jxleqlHomdRRCFJHB5u47pIHTgiYs7IMqORSFW2o92qsdvldapCIKmXgqnKaeHY-rMH5zhCMCQgrlPf8ceduWCscJrYKCj1NlK-ZmrVs3LtoEYohirCHMN5iSnGf0hwxJLUL1aaj6mQmqW8cqWfZ2Z6b9Bn2Uzg=")
     MANAGEMENT_MODE = os.environ.get("MANAGEMENT_MODE", None)
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "elieverobot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "thehouse6bot")
     SUPPORT = os.environ.get("SUPPORT", "ygabutkan")
     CHANNEL = os.environ.get("CHANNEL", "ygabutkan")
     START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/35a7b5d9f1f2605c9c0d3.png")
