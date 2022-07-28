@@ -39,7 +39,7 @@ from Zaid.helpers.queues import (
     pop_an_item,
 )
 from telethon import Button, events
-from Config import Config
+from config import Config
 
 from Zaid.helpers.thumbnail import gen_thumb
 from Zaid.helpers.joiner import AssistantAdd
